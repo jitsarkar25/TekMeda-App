@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_neworder"
+        android:orderInCategory="100"
+        android:title="New Order"
+        android:icon="@android:drawable/ic_input_add"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/nav_placeorder"
+        android:orderInCategory="100"
+        android:title="Place"
+        app:showAsAction="always" />
+</menu>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asas"
+        android:gravity="center_horizontal"
+        android:textColor="#ffffff"
+        android:id="@+id/orderNumberDelivered"
+/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="100"
+        android:background="@drawable/list_back"
+        >
+    <LinearLayout
+        android:layout_width="0dp"
+        android:orientation="vertical"
+        android:layout_weight="70"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+
+            android:textSize="17dp"
+            android:padding="7dp"
+            android:id="@+id/tvorderedMedicineNameDelivered"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingBottom="7dp"
+            android:id="@+id/tvorderedMedicineQtyDelivered"
+            android:textColor="#ffffff"
+            android:paddingLeft="7dp"
+            />
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="0dp"
+        android:layout_weight="30"
+        android:layout_gravity="bottom"
+        android:id="@+id/tvDeliveredDate"
+        android:textColor="#ffffff"
+        android:gravity="right"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

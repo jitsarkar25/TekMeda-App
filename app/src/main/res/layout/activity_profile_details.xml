@@ -1,0 +1,352 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackground"
+    android:layout_height="match_parent"
+    tools:context=".ProfileDetailsActivity"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+
+
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_height="60dp"
+                android:layout_width="match_parent"
+                android:background="@drawable/edit_selector"
+                android:padding="10dp"
+                android:text="ID"
+                android:textIsSelectable="true"
+                android:textColor="#ffffff"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:id="@+id/tvId"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColorHint="#ffffff"
+                app:hintTextAppearance="@style/EditTextHintStyle"
+                android:background="@drawable/edit_selector"
+                app:passwordToggleTint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etFirstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="10"
+                    android:drawableLeft="@drawable/profile"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/profile"
+                    android:gravity="center_vertical"
+                    android:hint="Enter your First Name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+
+                    android:textSize="15dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColorHint="#ffffff"
+                app:hintTextAppearance="@style/EditTextHintStyle"
+                android:background="@drawable/edit_selector"
+                app:passwordToggleTint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="10"
+                    android:drawableLeft="@drawable/profile"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/profile"
+                    android:gravity="center_vertical"
+                    android:hint="Enter your Last Name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+
+                    android:textSize="15dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColorHint="#ffffff"
+                app:hintTextAppearance="@style/EditTextHintStyle"
+                android:background="@drawable/edit_selector"
+                app:passwordToggleTint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="10"
+                    android:drawableLeft="@drawable/email"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/email"
+                    android:gravity="center_vertical"
+                    android:hint="Enter your email id"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+
+                    android:textSize="15dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColorHint="#ffffff"
+                app:hintTextAppearance="@style/EditTextHintStyle"
+                android:background="@drawable/edit_selector"
+                app:passwordToggleTint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etStoreName"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="10"
+                    android:drawableLeft="@drawable/shopname"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/shopname"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Store Name"
+                    android:inputType="textCapWords"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+
+                    android:textSize="15dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:textColorHint="#ffffff"
+                app:hintTextAppearance="@style/EditTextHintStyle"
+                android:layout_height="60dp"
+                android:background="@drawable/edit_selector"
+                app:passwordToggleTint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etphone"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="10"
+                    android:drawableLeft="@drawable/mobile"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/mobile"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Mobile Number"
+                    android:inputType="phone"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+
+                    android:textSize="15dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColorHint="#ffffff"
+                app:hintTextAppearance="@style/EditTextHintStyle"
+                android:background="@drawable/edit_selector"
+                app:passwordToggleTint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etStoreAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="10"
+                    android:drawableLeft="@drawable/address"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/address"
+                    android:gravity="center_vertical"
+                    android:hint="Enter Store Address"
+                    android:inputType="textPostalAddress"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+
+                    android:textSize="15dp" />
+
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColorHint="#ffffff"
+                app:hintTextAppearance="@style/EditTextHintStyle"
+                android:background="@drawable/edit_selector"
+                app:passwordToggleTint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etShopNo"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="10"
+                    android:drawableLeft="@drawable/address"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/address"
+                    android:gravity="center_vertical"
+                    android:hint="Shop No."
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+
+                    android:textSize="15dp" />
+
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColorHint="#ffffff"
+                app:hintTextAppearance="@style/EditTextHintStyle"
+                android:background="@drawable/edit_selector"
+                app:passwordToggleTint="@color/colorPrimary">
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etStreet"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="10"
+                    android:drawableLeft="@drawable/address"
+                    android:drawablePadding="10dp"
+                    android:textColor="#ffffff"
+                    android:drawableStart="@drawable/address"
+                    android:gravity="center_vertical"
+                    android:hint="Street"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColorHint="#bababa"
+
+                    android:textSize="15dp" />
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColorHint="#ffffff"
+                app:hintTextAppearance="@style/EditTextHintStyle"
+                android:background="@drawable/edit_selector"
+                app:passwordToggleTint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="10"
+                    android:drawableLeft="@drawable/address"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/address"
+                    android:gravity="center_vertical"
+                    android:hint="City"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+
+                    android:textSize="15dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColorHint="#ffffff"
+                app:hintTextAppearance="@style/EditTextHintStyle"
+                android:background="@drawable/edit_selector"
+                app:passwordToggleTint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etPIN"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="0dp"
+                    android:layout_weight="10"
+                    android:drawableLeft="@drawable/address"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/address"
+                    android:gravity="center_vertical"
+                    android:hint="Pincode"
+                    android:inputType="number"
+                    android:padding="10dp"
+                    android:textColor="#ffffff"
+
+                    android:textSize="15dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textColorHint="#ffffff"
+                app:hintTextAppearance="@style/EditTextHintStyle"
+                android:background="@drawable/edit_selector"
+                app:passwordToggleTint="@color/colorPrimary">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/etState"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="0dp"
+                    android:textColor="#ffffff"
+                    android:layout_weight="10"
+                    android:drawableLeft="@drawable/address"
+                    android:drawablePadding="10dp"
+                    android:drawableStart="@drawable/address"
+                    android:gravity="center_vertical"
+                    android:hint="State"
+                    android:inputType="text"
+                    android:padding="10dp"
+                    android:textColorHint="#bababa"
+
+                    android:textSize="15dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_selector_blue"
+                android:onClick="saveuserdetails"
+                android:text="Save"
+                android:gravity="center_vertical|center_horizontal"
+                android:layout_weight="10"
+                android:textColor="#ffffff" />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

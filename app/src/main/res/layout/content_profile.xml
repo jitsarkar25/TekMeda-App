@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#32333D"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="retailer.tekmeda.com.tekmedaretailerfmcg.ProfileActivity"
+    tools:showIn="@layout/app_bar_profile">
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="96dp"
+        android:src="@drawable/profiletekmeda"
+      />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorTextView"
+        android:textSize="20dp"
+        android:layout_below="@+id/profile_image"
+        android:text="Profile Name"
+        android:id="@+id/tvProfileName"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:layout_height="match_parent"
+        android:background="@drawable/list_back"
+        android:layout_below="@+id/tvProfileName"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="75dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="0"
+                        android:id="@+id/tvNumberOfOrdersDraft"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="50sp"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Draft Orders"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold"
+                        android:gravity="center_horizontal"
+                        />
+
+                </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:orientation="vertical"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                  android:text="0"
+                    android:id="@+id/tvNumberOfOrdersPlaced"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Placed Orders"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:id="@+id/tvNumberOfOrdersAccepted"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="50sp"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Accepted Orders"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="50sp"
+                    android:id="@+id/tvNumberOfOrdersDelivered"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delivered Orders"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/edit_selector"
+        >
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:onClick="draftorder"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/draftorder"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Draft Order"
+                android:textSize="10dp"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:onClick="myconnection"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/connectedstockists"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:text="My Connection"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:weightSum="3"
+            android:onClick="newmedicine"
+            android:clickable="true"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:src="@drawable/newmedicine"
+
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:text="New Medicine"
+                android:gravity="center_horizontal"
+                android:textColor="#ffffff"
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

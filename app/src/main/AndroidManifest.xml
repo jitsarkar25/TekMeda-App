@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="retailer.tekmeda.com.tekmedaretailerfmcg">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/tekmeda"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/tekmeda"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".ProfileActivity"
+            android:label="Retail Profile"
+
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".StockistConnectionActivity"
+            android:label="Connected Stockists"
+            android:parentActivityName=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".StockistDetailActivity"
+            android:label="Stockist Details"
+            android:parentActivityName=".StockistConnectionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewOrderPageActivity"
+            android:label="Select Stockist"
+            android:parentActivityName=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrderMedicineActivity"
+            android:label="New Order"
+            android:parentActivityName=".AlreadyOrderedMedicineActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".AlreadyOrderedMedicineActivity"
+            android:label="Orders"
+            android:parentActivityName=".NewOrderPageActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrdersOnDeliveryStockistActivity"
+            android:label="Select Stockist"
+            android:parentActivityName=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".OrdersOnDeliveryDetailsActivity"
+            android:label="Accepted Orders"
+            android:parentActivityName=".OrdersOnDeliveryStockistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DeliveredOrdersStockistActivity"
+            android:label="Select Stockist"
+            android:parentActivityName=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".DeliveredOrderDetailsActivity"
+            android:label="Delivered Orders"
+            android:parentActivityName=".DeliveredOrdersStockistActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".RejectedOrdersDetailsActivity"
+            android:label="Rejected Orders"
+            android:parentActivityName=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NewMedicineActivity"
+            android:label="New Medicines"
+            android:parentActivityName=".ProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ProfileDetailsActivity"
+            android:label="Profile Details"
+            android:parentActivityName=".ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".PlacedOrderActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".PlacedOrdersStockistActivity"
+            android:label="Placed Orders"
+            />
+        <activity android:name=".PlacedOrdersStockistActivity"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".ProfileActivity"
+            android:label="Select Stockist"
+
+            ></activity>
+    </application>
+
+</manifest>

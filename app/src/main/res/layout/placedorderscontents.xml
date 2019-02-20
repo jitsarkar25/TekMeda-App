@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="100"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvOrderNumberPlaced"
+        android:padding="3dp"
+        android:textColor="#ffffff"
+
+        android:gravity="center_horizontal"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/list_back"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:textSize="17dp"
+            android:padding="7dp"
+            android:id="@+id/tvorderedMedicineNamePlaced"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="7dp"
+            android:id="@+id/tvorderedMedicineQtyPlaced"
+            android:textColor="#ffffff"
+            android:paddingLeft="7dp"
+            />
+
+    </LinearLayout>
+
+
+</LinearLayout>

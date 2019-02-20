@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="#32333D"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/tekmedanewlogo"
+            />
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/edit_selector"
+            app:passwordToggleTint="@color/colorPrimary"
+            android:textColorHint="#ffffff"
+            app:hintTextAppearance="@style/EditTextHintStyle"
+            android:layout_height="60dp">
+
+            <android.support.design.widget.TextInputEditText
+                android:padding="10dp"
+                android:drawableLeft="@drawable/email"
+                android:layout_weight="10"
+                android:drawableStart="@drawable/email"
+                android:drawablePadding="10dp"
+                android:layout_width="match_parent"
+                android:gravity="center_vertical"
+                android:textSize="15dp"
+                android:textColor="#ffffff"
+                android:id="@+id/etEmailRegister"
+                android:inputType="textEmailAddress"
+                android:hint="Enter your email id"
+                android:textColorHint="#bababa"
+                android:layout_marginBottom="0dp"
+
+                android:layout_height="60dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/tilPassReg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            app:hintTextAppearance="@style/EditTextHintStyle"
+            android:background="@drawable/edit_selector"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorPrimary">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etPasswordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:textColor="#ffffff"
+                android:layout_weight="10"
+                android:background="@drawable/edit_selector"
+
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/password"
+                android:gravity="center_vertical"
+                android:hint="Enter Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColorHint="#bababa"
+                android:textSize="15dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tilPassConfReg"
+            app:passwordToggleEnabled="true"
+            android:textColorHint="#ffffff"
+            app:hintTextAppearance="@style/EditTextHintStyle"
+            android:background="@drawable/edit_selector"
+            app:passwordToggleTint="@color/colorPrimary"
+            android:layout_weight="0.02">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/etConfPasswordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="0dp"
+                android:textColor="#ffffff"
+                android:layout_weight="10"
+                android:background="@drawable/edit_selector"
+                android:drawableLeft="@drawable/password"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/password"
+                android:gravity="center_vertical"
+                android:hint="Re Enter Password"
+                android:inputType="textPassword"
+                android:padding="10dp"
+                android:textColorHint="#bababa"
+                android:textSize="15dp" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:onClick="registeruser"
+            android:textColor="#ffffff"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_selector_blue"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Already registered? Login"
+            android:gravity="center_horizontal"
+
+            android:layout_marginTop="25dp"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:onClick="loginuser"
+            />
+    </LinearLayout>
+
+
+</ScrollView>
+</LinearLayout>

@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorBackground"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="retailer.tekmeda.com.tekmedaretailerfmcg.OrderMedicineActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Medicine Name"
+        android:textColor="@color/colorTextView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        />
+    <AutoCompleteTextView
+        android:layout_margin="15dp"
+        android:layout_width="match_parent"
+        android:hint="Medicine Name"
+        android:background="@drawable/edit_selector"
+        android:id="@+id/tvMedicineName"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:dropDownWidth="match_parent"
+        android:drawableRight="@android:drawable/ic_menu_search"
+        android:imeOptions="actionNext"
+        android:textSize="15dp"
+        />
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Quantity"
+    android:textColor="@color/colorTextView"
+    android:layout_marginLeft="15dp"
+    android:layout_marginTop="15dp"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:textSize="15dp"
+        android:id="@+id/tvQuanity"
+        android:inputType="numberDecimal"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+        android:hint="Quantity"
+        android:background="@drawable/edit_selector"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Units"
+        android:textColor="@color/colorTextView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:textSize="15dp"
+        android:id="@+id/spUnit"
+
+        android:background="@drawable/edit_selector"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:id="@+id/llStockistSelect"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Stockist"
+        android:textColor="@color/colorTextView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        />
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_margin="15dp"
+        android:textSize="15dp"
+        android:id="@+id/spStockist"
+        android:textColorHint="#ffffff"
+        android:textColor="#ffffff"
+
+
+        android:background="@drawable/edit_selector"
+        />
+        </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order"
+        android:onClick="placeOrder"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorTextView"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_selector_blue"
+        />
+    </LinearLayout>
+</LinearLayout>

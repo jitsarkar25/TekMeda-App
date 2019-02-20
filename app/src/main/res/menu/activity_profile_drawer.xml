@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/profile"
+            android:title="My Profile" />
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/draftorder"
+            android:title="Draft Order" />
+        <item
+            android:id="@+id/nav_placed"
+            android:icon="@drawable/placedorders"
+            android:title="Placed Order" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@drawable/acceptedmeds"
+            android:title="Accepted Orders" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@drawable/deliveredmeds"
+            android:title="Delivered Orders" />
+        <item
+            android:id="@+id/reject_order_nav"
+            android:icon="@drawable/rejectedorders"
+            android:title="Rejected Orders" />
+    </group>
+
+    <item android:title="Connections">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/connectedstockists"
+                android:title="Connected Stockists" />
+            <item
+                android:id="@+id/nav_newmed"
+                android:icon="@drawable/newmedicine"
+                android:title="New Medicines" />
+
+        </menu>
+    </item>
+
+</menu>

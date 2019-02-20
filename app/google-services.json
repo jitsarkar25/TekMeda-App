@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "346866385818",
+    "firebase_url": "https://tekmeda-fmcg.firebaseio.com",
+    "project_id": "tekmeda-fmcg",
+    "storage_bucket": "tekmeda-fmcg.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:346866385818:android:c13568a46cd3f1c3",
+        "android_client_info": {
+          "package_name": "retailer.tekmeda.com.tekmedaretailerfmcg"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "346866385818-416o2et0njuv97g7ilgq9iqoraqqsgka.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA50xOaI_t9utp9vYBhQQYI1uX9TNNB998"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
